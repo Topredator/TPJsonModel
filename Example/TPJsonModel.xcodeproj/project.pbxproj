@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		393C37D050BE6A01D927525B /* Pods_TPJsonModel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A839DEA844AF6347FA3F72E9 /* Pods_TPJsonModel_Tests.framework */; };
+		53B87ED52632726D00453DDE /* TPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B87ED42632726D00453DDE /* TPPerson.m */; };
+		53B87EDA2632728100453DDE /* TPWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B87ED92632728100453DDE /* TPWork.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		059838787762BF89EDA70CFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		059838787762BF89EDA70CFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1FD4717E2FEA7C85CD87634E /* Pods-TPJsonModel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPJsonModel_Example.debug.xcconfig"; path = "Target Support Files/Pods-TPJsonModel_Example/Pods-TPJsonModel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		511D001964252DDDB919F183 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		511D001964252DDDB919F183 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		53B87ED32632726D00453DDE /* TPPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPPerson.h; sourceTree = "<group>"; };
+		53B87ED42632726D00453DDE /* TPPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPPerson.m; sourceTree = "<group>"; };
+		53B87ED82632728100453DDE /* TPWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPWork.h; sourceTree = "<group>"; };
+		53B87ED92632728100453DDE /* TPWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPWork.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TPJsonModel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPJsonModel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,7 +65,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		62CA64CD2BF142754CAFFB52 /* TPJsonModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TPJsonModel.podspec; path = ../TPJsonModel.podspec; sourceTree = "<group>"; };
+		62CA64CD2BF142754CAFFB52 /* TPJsonModel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPJsonModel.podspec; path = ../TPJsonModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A490D9066DC69A228295568C /* Pods_TPJsonModel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPJsonModel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +109,6 @@
 				BD72180CB1140F8ECFB05340 /* Pods-TPJsonModel_Tests.debug.xcconfig */,
 				F76FB7EAE614F31808D10361 /* Pods-TPJsonModel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +157,10 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				53B87ED32632726D00453DDE /* TPPerson.h */,
+				53B87ED42632726D00453DDE /* TPPerson.m */,
+				53B87ED82632728100453DDE /* TPWork.h */,
+				53B87ED92632728100453DDE /* TPWork.m */,
 			);
 			name = "Example for TPJsonModel";
 			path = TPJsonModel;
@@ -258,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -364,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B87ED52632726D00453DDE /* TPPerson.m in Sources */,
+				53B87EDA2632728100453DDE /* TPWork.m in Sources */,
 				6003F59E195388D20070C39A /* TPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* TPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

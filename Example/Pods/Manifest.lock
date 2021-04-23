@@ -1,0 +1,16 @@
+PODS:
+  - TPJsonModel (1.0.0)
+
+DEPENDENCIES:
+  - TPJsonModel (from `../`)
+
+EXTERNAL SOURCES:
+  TPJsonModel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TPJsonModel: 08b25aa72d62e6991639e62280796336972352c6
+
+PODFILE CHECKSUM: 8e087f19a08577c1ecf624e42b14ab611662af1d
+
+COCOAPODS: 1.10.1
