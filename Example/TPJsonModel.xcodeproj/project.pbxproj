@@ -257,6 +257,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Topredator;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 569GNZ5392;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -506,6 +509,7 @@
 			baseConfigurationReference = 1FD4717E2FEA7C85CD87634E /* Pods-TPJsonModel_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 569GNZ5392;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TPJsonModel/TPJsonModel-Prefix.pch";
 				INFOPLIST_FILE = "TPJsonModel/TPJsonModel-Info.plist";
@@ -523,6 +527,7 @@
 			baseConfigurationReference = BA01DC0FC8F59C5E33F0EE1D /* Pods-TPJsonModel_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 569GNZ5392;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TPJsonModel/TPJsonModel-Prefix.pch";
 				INFOPLIST_FILE = "TPJsonModel/TPJsonModel-Info.plist";
